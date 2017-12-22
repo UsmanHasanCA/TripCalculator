@@ -24,10 +24,28 @@ This application was built using Eclipse IDE for Java.
 
 2. Start by entering any names you would like in the 3 name fields. One at a time or all together, either way works, however the field for expenses will be disabled until a valid name is entered.
 
-3. You'll notice that the field for expenses that was previously disabled has now been enabled because you've entered in a value for name, so feel free to start by entering an expense.
+3. You'll notice that the field for expenses that was previously disabled will now be enabled when you click on it because you've entered in a value for name, so feel free to start by entering an expense.
 
 4. Once you've entered an expense hit the "+" button to add it to that user's list of expenses. If you've added an expense in error, simply press the "undo" button and the most recently added expense will be removed followed by a message on screen confirming its removal.
 
 5. Add as many expenses as you'd like for each user and once you're done hit the "Calculate" button to finalize your input. 
 
 The application's design is fairly intuitive, however if you find yourself confused, hover any element and read its detailed tool-tip for clarification on what its been programmed to do.
+
+### Example Test Case
+
+#### Name      Expense
+
+
+Louis       53.54
+
+Carter      50.23
+
+David       113.41
+
+#### Expected Output:
+
+Louis pays $18.85 to David
+
+Carter pays $22.16 to David
+
