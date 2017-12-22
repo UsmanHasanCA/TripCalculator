@@ -20,7 +20,7 @@ This application was built using Eclipse IDE for Java.
 
 ### Instructions
 
-1. Once the application has booted up, you'll notice at the right below the title "Trip Cost Calculator", is an example row showing you the expected input.
+1. Once the application has booted up, you'll notice right below the title "Trip Cost Calculator", is an example row showing you the expected input.
 
 2. Start by entering any names you would like in the 3 name fields. One at a time or all together, either way works, however the field for expenses will be disabled until a valid name is entered.
 
