@@ -206,7 +206,7 @@ public class AppGUI extends TripCalculatorBrain {
 		
 		//Initializes final calculation button/submission button
 		JButton btnCalculate = new JButton("Calculate");
-		btnCalculate.setBounds(235, 171, 81, 23);
+		btnCalculate.setBounds(235, 171, 96, 23);
 		btnCalculate.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		frame.getContentPane().add(btnCalculate);
 		
