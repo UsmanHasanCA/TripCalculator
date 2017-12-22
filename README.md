@@ -49,3 +49,8 @@ Louis pays $18.85 to David
 
 Carter pays $22.16 to David
 
+
+## Unit Testing
+
+Please see attached "TripCalcTest.java" file for unit testing done using JUnit
+
