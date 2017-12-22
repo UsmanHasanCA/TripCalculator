@@ -390,29 +390,42 @@ public class AppGUI extends TripCalculatorBrain {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				
-				//stores user names in parent class variable
-				userNameOne = personNameOne.getText();
-				userNameTwo = personNameTwo.getText();
-				userNameThree = personNameThree.getText();
-				
-				//runs calculations for user's total expenses
-				totalExpenseUserOne = calcTotal(listOfExpensesForUserOne);
-				totalExpenseUserTwo = calcTotal(listOfExpensesForUserTwo);
-				totalExpenseUserThree = calcTotal(listOfExpensesForUserThree);
-				amountOwedByEach(totalExpenseUserOne, totalExpenseUserTwo, totalExpenseUserThree);
-				moneyGoesTo(totalExpenseUserOne, totalExpenseUserTwo, totalExpenseUserThree);
-				amountPaid(userNameOne, totalExpenseUserOne);
-				amountPaid(userNameTwo, totalExpenseUserTwo);
-				amountPaid(userNameThree, totalExpenseUserThree);
-				
-				try {
-				output.setText(calculate());
+				//this series of if-else statements checks to make sure that the user has not deleted the name after entering expenses and before hitting calculate
+				if (personNameOne.getText().isEmpty()) {
+					output.setText("Please enter in a valid name for user one");
 				}
-				
-				catch(IllegalArgumentException e) {
-					output.setText("You have not entered any data");
+				else if(personNameTwo.getText().isEmpty()) {
+					output.setText("Please enter in a valid name for user two");
 				}
-			}
+				else if (personNameThree.getText().isEmpty()) {
+					output.setText("Please enter in a valid name for user three");
+				}
+				else {
+					
+					//stores user names in parent class variable
+					userNameOne = personNameOne.getText();
+					userNameTwo = personNameTwo.getText();
+					userNameThree = personNameThree.getText();
+					
+					//runs calculations for user's total expenses
+					totalExpenseUserOne = calcTotal(listOfExpensesForUserOne);
+					totalExpenseUserTwo = calcTotal(listOfExpensesForUserTwo);
+					totalExpenseUserThree = calcTotal(listOfExpensesForUserThree);
+					amountOwedByEach(totalExpenseUserOne, totalExpenseUserTwo, totalExpenseUserThree);
+					moneyGoesTo(totalExpenseUserOne, totalExpenseUserTwo, totalExpenseUserThree);
+					amountPaid(userNameOne, totalExpenseUserOne);
+					amountPaid(userNameTwo, totalExpenseUserTwo);
+					amountPaid(userNameThree, totalExpenseUserThree);
+					
+					try {
+					output.setText(calculate());
+					}
+					
+					catch(IllegalArgumentException e) {
+						output.setText("You have not entered any data");
+					}
+				}
+		    }
 		});
 
 		
