@@ -30,4 +30,4 @@ This application was built using Eclipse IDE for Java.
 
 5. Add as many expenses as you'd like for each user and once you're done hit the "Calculate" button to finalize your input. 
 
-The application's design is pretty intuitive, should you run into any confusion, feel free to hover any element and read its detailed tool-tip for clarification on what its been programmed to do.
+The application's design is fairly intuitive, however if you find yourself confused, hover any element and read its detailed tool-tip for clarification on what its been programmed to do.
