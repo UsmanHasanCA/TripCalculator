@@ -52,5 +52,5 @@ Carter pays $22.16 to David
 
 ## Unit Testing
 
-Please see attached "TripCalcTest.java" file for unit testing done using JUnit
+Please see attached "TripCalcTest.java" file for unit testing done using JUnit. Simply add the file to the project where "AppGUI.java" and "TripCalculatorBrain.java" are located and then run it.
 
