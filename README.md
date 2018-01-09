@@ -1,3 +1,5 @@
+######### Note: this was a take home code-project as part of an interview for a Software Engineer position
+
 # TripCalculator
 A trip calculator for determining expense distribution for 3 people
 
